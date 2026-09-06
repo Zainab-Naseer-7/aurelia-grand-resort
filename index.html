@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURELIA GRAND RESORT & SPA | 5-Star Luxury Oceanfront Sanctuary</title>
+  <meta name="description" content="Experience the pinnacle of Mediterranean luxury at Aurelia Grand Resort & Spa. World-class oceanfront suites, Michelin-starred dining, private yacht charters, and an imperial hydrothermal wellness sanctuary.">
+  <meta name="keywords" content="Aurelia Grand Resort, luxury resort, 5 star hotel, oceanfront suites, Michelin dining, luxury spa, private villa, Mediterranean luxury escape">
+  
+  <!-- Open Graph / Social Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AURELIA GRAND RESORT & SPA | Where Luxury Meets the Art of Escape">
+  <meta property="og:description" content="Discover world-class luxury on an exclusive private peninsula. Exceptional hospitality, biophilic architecture, and Michelin-starred gastronomy.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1600&q=80">
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Floating Transparent to Frosted Glass Navbar -->
+  <header class="site-nav" id="siteNavbar">
+    <div class="container nav-inner">
+      <!-- Brand Logo -->
+      <a href="#hero" class="nav-brand" aria-label="Aurelia Grand Resort Home">
+        <div class="brand-monogram">
+          <span>A</span>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">AURELIA</span>
+          <span class="brand-tag">Grand Resort & Spa</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#rooms" class="nav-link">Rooms & Suites</a></li>
+          <li><a href="#dining" class="nav-link">Dining</a></li>
+          <li><a href="#wellness" class="nav-link">Wellness</a></li>
+          <li><a href="#experiences" class="nav-link">Experiences</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Ambient Sound Atmosphere Toggle -->
+        <button class="sound-toggle-btn" id="soundToggleBtn" title="Toggle Atmospheric Soundscape" aria-label="Toggle Atmospheric Soundscape">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <line x1="23" y1="9" x2="17" y2="15"></line>
+            <line x1="17" y1="9" x2="23" y2="15"></line>
+          </svg>
+        </button>
+
+        <!-- Reserve CTA Button -->
+        <button class="btn btn-primary btn-sm open-booking-engine-btn" id="navReserveBtn">
+          <span>Reserve Now</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer & Overlay -->
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div>
+      <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 2.5rem;">
+        <div class="brand-monogram" style="width: 36px; height: 36px; font-size: 1.1rem;">A</div>
+        <div class="brand-text">
+          <span class="brand-name" style="font-size: 1.1rem;">AURELIA</span>
+          <span class="brand-tag">Grand Resort & Spa</span>
+        </div>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#rooms">Rooms & Suites</a></li>
+        <li><a href="#dining">Dining & Gastronomy</a></li>
+        <li><a href="#wellness">Wellness & Spa</a></li>
+        <li><a href="#experiences">Bespoke Experiences</a></li>
+        <li><a href="#gallery">Visual Gallery</a></li>
+        <li><a href="#about">Heritage & Vision</a></li>
+        <li><a href="#contact">VIP Concierge</a></li>
+      </ul>
+    </div>
+    <div>
+      <button class="btn btn-primary open-booking-engine-btn" style="width: 100%; margin-bottom: 1rem;">
+        <span>Reserve Your Stay</span>
+      </button>
+      <div style="font-size: 0.75rem; text-align: center; color: var(--gold-pale);">
+        Direct Inquiries: +1 (800) 589-2873
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <!-- 1. Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-background">
+        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1920&q=85" alt="Aurelia Grand Resort Oceanfront Sanctuary" class="hero-bg-image">
+        <div class="hero-overlay"></div>
+        <canvas id="heroCanvas"></canvas>
+      </div>
+
+      <div class="container hero-content">
+        <div class="gold-badge">✦ Welcome to Aurelia Grand Resort ✦</div>
+        <h1 class="hero-headline">Where Luxury Meets the <span>Art of Escape</span></h1>
+        <p class="hero-description">
+          Nestled on a secluded Mediterranean peninsula, Aurelia harmonizes timeless Italian architecture with boundless ocean horizons, Michelin-starred alchemy, and an unmatched standard of bespoke hospitality.
+        </p>
+        
+        <div class="hero-cta-group">
+          <button class="btn btn-primary open-booking-engine-btn" id="heroReserveBtn">
+            <span>Reserve Your Stay</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+          <a href="#introduction" class="btn btn-secondary" id="heroExploreBtn">
+            <span>Explore The Resort</span>
+          </a>
+        </div>
+
+        <div class="hero-badges-row">
+          <div class="hero-badge-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <span>Forbes 5-Star Worldwide</span>
+          </div>
+          <div class="hero-badge-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+            <span>Private Peninsula & Marina</span>
+          </div>
+          <div class="hero-badge-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+            <span>Michelin-Starred Dining</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mouse Scroll Indicator -->
+      <a href="#quickBookingBar" class="hero-scroll-indicator" aria-label="Scroll to search bar">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span class="scroll-label">Scroll to Discover</span>
+      </a>
+    </section>
+
+    <!-- Quick Booking / Availability Search Bar -->
+    <div class="container quick-booking-bar-wrapper" id="quickBookingBar">
+      <div class="quick-booking-bar">
+        <!-- Check-in -->
+        <div class="booking-field-group">
+          <label class="booking-field-label" for="quickCheckIn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            <span>Check-in</span>
+          </label>
+          <input type="date" id="quickCheckIn" class="booking-field-input" aria-label="Check-in Date">
+        </div>
+
+        <!-- Check-out -->
+        <div class="booking-field-group">
+          <label class="booking-field-label" for="quickCheckOut">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            <span>Check-out</span>
+          </label>
+          <input type="date" id="quickCheckOut" class="booking-field-input" aria-label="Check-out Date">
+        </div>
+
+        <!-- Room Type -->
+        <div class="booking-field-group">
+          <label class="booking-field-label" for="quickRoomType">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+            <span>Accommodation</span>
+          </label>
+          <select id="quickRoomType" class="booking-field-input" aria-label="Room Type">
+            <option value="all">All Suites & Villas</option>
+            <option value="Deluxe Rooms">Deluxe Rooms</option>
+            <option value="Ocean View Rooms">Ocean View Suites</option>
+            <option value="Executive Suites">Executive Suites</option>
+            <option value="Royal Suites">Royal Suites</option>
+            <option value="Presidential Villa">Presidential Villa</option>
+          </select>
+        </div>
+
+        <!-- Guests -->
+        <div class="booking-field-group">
+          <label class="booking-field-label" for="quickGuests">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            <span>Guests & Rooms</span>
+          </label>
+          <select id="quickGuests" class="booking-field-input" aria-label="Guests and Rooms">
+            <option value="1 Guest, 1 Room">1 Guest, 1 Room</option>
+            <option value="2 Guests, 1 Room" selected>2 Guests, 1 Room</option>
+            <option value="3 Guests, 1 Room">3 Guests, 1 Room</option>
+            <option value="4 Guests, 2 Rooms">4 Guests, 2 Rooms</option>
+            <option value="6+ Guests, Imperial Villa">6+ Guests (Imperial Villa)</option>
+          </select>
+        </div>
+
+        <!-- Check Availability Button -->
+        <button id="quickCheckBtn" class="btn btn-primary">
+          <span>Check Availability</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- 2. Introduction Section -->
+    <section class="section" id="introduction">
+      <div class="container intro-grid">
+        <div class="intro-editorial-content">
+          <span class="gold-badge">The Aurelia Philosophy</span>
+          <h2 class="section-title" style="text-align: left;">A Sanctuary Beyond Ordinary</h2>
+          <div class="intro-lead-quote">
+            “Architecture sculpted by sea breezes, silence guarded by emerald cliffs, and moments refined by pure intuitive hospitality.”
+          </div>
+          <p class="intro-body-text">
+            Perched exclusively along the sun-drenched coastline of Cala di Oro, Aurelia Grand Resort was conceived as an architectural tribute to the elements. Here, dramatic limestone cliffs cradle private lagoons, while our biophilic villas seamlessly blend indoor luxury with untamed Mediterranean beauty.
+          </p>
+          <p class="intro-body-text">
+            Whether arriving via private helicopter at our cliffside helipad or docking your yacht at the marina pier, every step into Aurelia reveals a rare ecosystem of Michelin-caliber gastronomy, restorative thermal wellness, and thoughtful serenity.
+          </p>
+
+          <div class="intro-highlights-grid">
+            <div class="intro-highlight-card">
+              <div class="intro-highlight-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <h4 class="intro-highlight-title">Forbes 5-Star Heritage</h4>
+              <p class="intro-highlight-desc">Recognized for three consecutive decades among the world’s most elite hospitality destinations.</p>
+            </div>
+            <div class="intro-highlight-card">
+              <div class="intro-highlight-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+              </div>
+              <h4 class="intro-highlight-title">Exclusive Peninsula</h4>
+              <p class="intro-highlight-desc">Over 140 protected coastal acres dedicated exclusively to our discerning guests.</p>
+            </div>
+            <div class="intro-highlight-card">
+              <div class="intro-highlight-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+              </div>
+              <h4 class="intro-highlight-title">Holistic Wellness</h4>
+              <p class="intro-highlight-desc">Subterranean hydrothermal grottos, salt thermal baths, and open-air cliffside pavilions.</p>
+            </div>
+            <div class="intro-highlight-card">
+              <div class="intro-highlight-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+              </div>
+              <h4 class="intro-highlight-title">Bespoke Butlerage</h4>
+              <p class="intro-highlight-desc">Unobtrusive, 24-hour dedicated butler care tailored to each resident’s personal rituals.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Composition Imagery -->
+        <div class="intro-image-composition">
+          <div class="composition-main-img-wrap">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80" alt="Aurelia Cliffside Architecture" class="composition-main-img" loading="lazy">
+          </div>
+          <div class="composition-float-card">
+            <div class="crest">✦</div>
+            <p>“To arrive at Aurelia is to discover the true definition of stillness.”</p>
+            <span>— Condé Nast Traveler 2025</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Rooms & Suites Showcase -->
+    <section class="section" id="rooms" style="background: var(--bg-deep);">
+      <div class="container">
+        <div class="section-header">
+          <span class="gold-badge">Private Residences & Sanctuaries</span>
+          <h2 class="section-title">Rooms & Suites</h2>
+          <div class="section-subtitle">Crafted with Italian travertine, custom teak woodwork, and infinite sea horizons</div>
+          <p class="section-desc">
+            Each suite is a secluded sanctuary featuring expansive outdoor terraces, state-of-the-art climate acoustics, deep marble soaking tubs, and discreet residential butlerage.
+          </p>
+          <div class="gold-line-divider"></div>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="category-filter-nav">
+          <button class="filter-btn room-filter-btn active" data-category="all">All Suites & Villas</button>
+          <button class="filter-btn room-filter-btn" data-category="Deluxe">Deluxe Rooms</button>
+          <button class="filter-btn room-filter-btn" data-category="Ocean View">Ocean View Rooms</button>
+          <button class="filter-btn room-filter-btn" data-category="Executive">Executive Suites</button>
+          <button class="filter-btn room-filter-btn" data-category="Royal">Royal Suites</button>
+          <button class="filter-btn room-filter-btn" data-category="Presidential">Presidential Villa</button>
+        </div>
+
+        <!-- Rooms Grid (Dynamically rendered with fallback) -->
+        <div class="rooms-grid" id="roomsGridContainer">
+          <!-- Rendered via app.js with rich room cards -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Dining & Culinary Excellence -->
+    <section class="section dining-section" id="dining">
+      <div class="container">
+        <div class="section-header">
+          <span class="gold-badge">Gastronomic Alchemy</span>
+          <h2 class="section-title">Dining & Bars</h2>
+          <div class="section-subtitle">Five distinct culinary realms overseen by 3-Michelin Star Master Chef Laurent Delacroix</div>
+          <p class="section-desc">
+            From the intimate underground limestone Sommelier’s Vault to sunset cocktails suspended above the sea at Aura Lounge, every meal is an unforgettable theatrical celebration.
+          </p>
+          <div class="gold-line-divider"></div>
+        </div>
+
+        <div class="dining-grid" id="diningGridContainer">
+          <!-- Rendered via app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Wellness & Spa Sanctuary -->
+    <section class="section wellness-section" id="wellness">
+      <div class="container">
+        <div class="section-header">
+          <span class="gold-badge">The Spa at Aurelia</span>
+          <h2 class="section-title">Restore. Rebalance. Renew.</h2>
+          <div class="section-subtitle">A 3,000 m² temple dedicated to longevity, cellular vitality, and restorative stillness</div>
+          <p class="section-desc">
+            Immerse in geothermal vitality pools, Finnish aromatherapy saunas, cryotherapy plunges, and signature treatments enriched with pure 24-karat gold and Mediterranean botanicals.
+          </p>
+          <div class="gold-line-divider"></div>
+        </div>
+
+        <!-- Wellness Hero Banner -->
+        <div class="wellness-hero-banner">
+          <div class="wellness-banner-overlay"></div>
+          <div class="wellness-banner-content">
+            <div class="gold-badge">Holistic Wellbeing</div>
+            <div class="wellness-banner-quote">“Where the ancient rhythm of the ocean becomes your breath.”</div>
+            <p class="wellness-banner-text">
+              Our bespoke longevity protocols fuse time-tested Eastern bodywork with Swiss hydro-cellular therapies, guided by resident physiologists and master herbalists.
+            </p>
+            <button class="btn btn-primary" onclick="window.AureliaApp.openSpaModal('spa-sanctuary')">
+              <span>Book Spa Sanctuary</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Spa Treatments Grid -->
+        <div class="wellness-grid" id="wellnessGridContainer">
+          <!-- Rendered via app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Bespoke Experiences -->
+    <section class="section" id="experiences" style="background: var(--bg-deep);">
+      <div class="container">
+        <div class="section-header">
+          <span class="gold-badge">Unforgettable Journeys</span>
+          <h2 class="section-title">Curated Experiences</h2>
+          <div class="section-subtitle">Private atolls, Riva yacht charters, bioluminescent waters, and celestial skies</div>
+          <p class="section-desc">
+            Our Head Concierge personalizes every escapade. Whether chartering a private Riva yacht or embarking on night dives beneath glowing plankton, discovery awaits.
+          </p>
+          <div class="gold-line-divider"></div>
+        </div>
+
+        <div class="experiences-grid" id="experiencesGridContainer">
+          <!-- Rendered via app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. High-End Curated Visual Gallery -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <span class="gold-badge">Visual Splendor</span>
+          <h2 class="section-title">The Aurelia Gallery</h2>
+          <div class="section-subtitle">Glimpse into life along the azure coastline</div>
+          <p class="section-desc">
+            Explore our suites, architectural pavilions, gastronomic creations, and breathtaking Mediterranean sunsets.
+          </p>
+          <div class="gold-line-divider"></div>
+        </div>
+
+        <!-- Gallery Filter Tabs -->
+        <div class="gallery-filter-nav">
+          <button class="filter-btn gallery-filter-btn active" data-category="all">All Perspectives</button>
+          <button class="filter-btn gallery-filter-btn" data-category="resort">Resort & Coast</button>
+          <button class="filter-btn gallery-filter-btn" data-category="suites">Suites & Villas</button>
+          <button class="filter-btn gallery-filter-btn" data-category="dining">Culinary</button>
+          <button class="filter-btn gallery-filter-btn" data-category="wellness">Spa & Pools</button>
+          <button class="filter-btn gallery-filter-btn" data-category="experiences">Experiences</button>
+        </div>
+
+        <!-- Masonry Grid Container -->
+        <div class="gallery-grid" id="galleryGridContainer">
+          <!-- Rendered via app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Why Aurelia (Animated Counters & Accolades) -->
+    <section class="section why-aurelia-section" id="whyAureliaSection">
+      <div class="container">
+        <div class="section-header">
+          <span class="gold-badge">The Aurelia Benchmark</span>
+          <h2 class="section-title">Why Aurelia</h2>
+          <div class="section-subtitle">Three decades of international hospitality distinction</div>
+          <div class="gold-line-divider"></div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number-wrap">
+              <span class="stat-number-value">0</span><span class="stat-suffix">+</span>
+            </div>
+            <div class="stat-label">Years of Uncompromising Hospitality</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number-wrap">
+              <span class="stat-number-value">0</span><span class="stat-suffix">+</span>
+            </div>
+            <div class="stat-label">Curated Luxury Suites & Private Villas</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number-wrap">
+              <span class="stat-number-value">0</span><span class="stat-suffix">+</span>
+            </div>
+            <div class="stat-label">Signature Bespoke Sea & Island Experiences</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number-wrap">
+              <span class="stat-number-value">0</span><span class="stat-suffix">%</span>
+            </div>
+            <div class="stat-label">Discerning Guest Satisfaction & Loyalty</div>
+          </div>
+        </div>
+
+        <div class="accolades-wrapper">
+          <div class="accolades-title">International Accolades & Honours</div>
+          <div class="accolades-row">
+            <div class="accolade-item">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <div class="accolade-name">Condé Nast Gold List 2025</div>
+            </div>
+            <div class="accolade-item">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+              <div class="accolade-name">Forbes 5-Star Luxury Resort</div>
+            </div>
+            <div class="accolade-item">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.45 1-1 1H7v2h10v-2h-2c-.55 0-1-.45-1-1v-2.34c3.08-.75 5-3.07 5-5.66V4H6v5c0 2.59 1.92 4.91 5 5.66z"></path></svg>
+              <div class="accolade-name">World Luxury Hotel Awards</div>
+            </div>
+            <div class="accolade-item">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+              <div class="accolade-name">Prix Versailles Architecture Prize</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Guest Reviews & Testimonials Slider -->
+    <section class="section testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="gold-badge">Guest Chronicles</span>
+          <h2 class="section-title">Whispers of Discretion</h2>
+          <div class="section-subtitle">Reflections from our esteemed international clientele</div>
+          <div class="gold-line-divider"></div>
+        </div>
+
+        <div class="testimonial-slider-container">
+          <div class="testimonial-track" id="testimonialsTrack">
+            <!-- Rendered via app.js -->
+          </div>
+
+          <!-- Slider Controls -->
+          <div class="slider-controls">
+            <button class="slider-btn" id="prevTestimonialBtn" aria-label="Previous Testimonial">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <div class="slider-dots" id="testimonialsDots"></div>
+            <button class="slider-btn" id="nextTestimonialBtn" aria-label="Next Testimonial">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Resort Location & Arrival Experience -->
+    <section class="section" id="location" style="background: var(--bg-deep);">
+      <div class="container location-grid">
+        <!-- Interactive Stylized Map -->
+        <div>
+          <span class="gold-badge">The Private Peninsula</span>
+          <h2 class="section-title" style="text-align: left;">Arrival & Logistics</h2>
+          <p class="intro-body-text" style="margin-bottom: 1.5rem;">
+            Aurelia occupies a private coastal bastion accessible only by sea, helipad, or our private gated serpentine drive. Select an arrival coordinate on the radar map to view transfer details.
+          </p>
+
+          <div class="map-interactive-container">
+            <div class="map-mockup-frame">
+              <div class="map-grid-lines"></div>
+              <div class="map-sea-waves"></div>
+
+              <!-- Map Hotspots -->
+              <div class="map-hotspot" style="top: 48%; left: 52%;" 
+                   data-location-title="Aurelia Grand Bastion & Suites" 
+                   data-location-desc="Main reception, luxury suites, and panoramic infinity pool." 
+                   data-location-coords="40°37'58.2&quot;N 14°22'41.6&quot;E">
+                <div class="hotspot-pin"><div class="hotspot-pulse"></div></div>
+                <div class="hotspot-tooltip">Main Bastion</div>
+              </div>
+
+              <div class="map-hotspot" style="top: 25%; left: 70%;" 
+                   data-location-title="Private VIP Helipad" 
+                   data-location-desc="12-minute charter flight from International Airport with tarmac transfer." 
+                   data-location-coords="40°38'02.1&quot;N 14°22'54.3&quot;E">
+                <div class="hotspot-pin"><div class="hotspot-pulse"></div></div>
+                <div class="hotspot-tooltip">VIP Helipad</div>
+              </div>
+
+              <div class="map-hotspot" style="top: 72%; left: 38%;" 
+                   data-location-title="Aurelia Private Marina & Pier" 
+                   data-location-desc="Docking berths for luxury yachts up to 65 meters with full tender support." 
+                   data-location-coords="40°37'44.8&quot;N 14°22'30.5&quot;E">
+                <div class="hotspot-pin"><div class="hotspot-pulse"></div></div>
+                <div class="hotspot-tooltip">Private Marina</div>
+              </div>
+
+              <div class="map-hotspot" style="top: 30%; left: 25%;" 
+                   data-location-title="Protected Coral Marine Sanctuary" 
+                   data-location-desc="Exclusive private reef for bioluminescent diving and snorkeling." 
+                   data-location-coords="40°38'15.4&quot;N 14°22'18.0&quot;E">
+                <div class="hotspot-pin"><div class="hotspot-pulse"></div></div>
+                <div class="hotspot-tooltip">Marine Reef</div>
+              </div>
+            </div>
+
+            <!-- Dynamic Info Output -->
+            <div id="mapActiveInfo" style="margin-top: 1.25rem; padding: 1rem; background: rgba(6,11,20,0.8); border: 1px solid var(--gold-border-subtle); border-radius: var(--radius-xs);">
+              <div style="font-family: var(--font-serif-display); font-size: 0.95rem; color: var(--gold-light); margin-bottom: 0.2rem;">Aurelia Grand Bastion & Suites</div>
+              <div style="font-size: 0.82rem; color: var(--text-cream); margin-bottom: 0.3rem;">Main reception, luxury suites, and panoramic infinity pool.</div>
+              <div style="font-size: 0.72rem; letter-spacing: 0.15em; color: var(--gold-primary); text-transform: uppercase;">GPS: 40°37'58.2"N 14°22'41.6"E</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Transfer Options -->
+        <div>
+          <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Bespoke Transfer Services</h3>
+          <div class="location-logistics-list">
+            <div class="logistics-card">
+              <div class="logistics-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 19 21 12 17 5 21 12 2"></polygon></svg>
+              </div>
+              <div class="logistics-details">
+                <h4>Private Helicopter Charter (12 Mins)</h4>
+                <p>Direct flight from Nice (NCE) or Naples (NAP) airport with direct touchdown on Aurelia’s private helipad.</p>
+              </div>
+            </div>
+
+            <div class="logistics-card">
+              <div class="logistics-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+              </div>
+              <div class="logistics-details">
+                <h4>Rolls-Royce Spectre Chauffeur (45 Mins)</h4>
+                <p>Enjoy chilled champagne and custom cashmere blankets aboard our silent, zero-emission private fleet.</p>
+              </div>
+            </div>
+
+            <div class="logistics-card">
+              <div class="logistics-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M2 17h20M4 22h16"></path><path d="M12 2L4 12h16L12 2z"></path></svg>
+              </div>
+              <div class="logistics-details">
+                <h4>Riva Yacht Tender Arrival (25 Mins)</h4>
+                <p>Arrive via the open turquoise waves with a panoramic view of the cliffs, docking smoothly at our private deepwater pier.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. About Aurelia & Heritage -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-editorial-block">
+          <span class="gold-badge">Heritage & Biophilic Architecture</span>
+          <h2 class="section-title" style="text-align: left;">Crafted with Reverence for Nature</h2>
+          <p class="intro-body-text">
+            Founded in 2001 by architectural visionary Matteo Vane and luxury hotelier Elena Rossi, Aurelia Grand Resort was envisioned not to conquer the cliffside, but to complete it. Every stone wall was hand-carved from native limestone excavated during construction.
+          </p>
+          <p class="intro-body-text">
+            Today, Aurelia operates on 100% renewable geothermal and solar energy, supports an adjacent 50-hectare coral marine preserve, and harvests fresh heritage produce from our rooftop biodynamic orchards.
+          </p>
+
+          <div class="about-pillar-row">
+            <div class="about-pillar-item">
+              <h4>Carbon-Positive Seclusion</h4>
+              <p>Certified green luxury with advanced water desalination and zero single-use plastics.</p>
+            </div>
+            <div class="about-pillar-item">
+              <h4>Marine Preservation</h4>
+              <p>10% of all private charter proceeds are invested into Mediterranean coral restoration.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-photo-mosaic">
+          <div class="about-photo-1">
+            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Resort Wellness Grounds" style="width:100%; height:100%; object-fit: cover;" loading="lazy">
+          </div>
+          <div class="about-photo-2">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" alt="Suite Horizon" style="width:100%; height:100%; object-fit: cover;" loading="lazy">
+          </div>
+          <div class="about-mosaic-badge">
+            <div style="font-family: var(--font-serif-display); font-size: 1.15rem; color: var(--gold-light);">AURELIA STANDARD</div>
+            <div style="font-size: 0.72rem; color: var(--text-muted); letter-spacing: 0.15em; text-transform: uppercase;">Since 2001</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. VIP Concierge & Contact Form -->
+    <section class="section" id="contact" style="background: var(--bg-deep);">
+      <div class="container contact-grid">
+        <!-- Contact Info Panel -->
+        <div class="contact-info-panel">
+          <div>
+            <span class="gold-badge">Direct Line</span>
+            <h2 class="section-title" style="text-align: left;">VIP Concierge</h2>
+            <p class="intro-body-text">
+              Our Head Concierge and residential reservation desk are at your service 24 hours a day, 365 days a year. We invite you to share any tailored requests or bespoke itinerary requirements.
+            </p>
+          </div>
+
+          <div class="concierge-contact-card">
+            <h3 class="concierge-card-title">Direct Communications</h3>
+            <p class="concierge-card-desc">For private aviation, yacht charter coordination, or presidential residence inquiries:</p>
+            
+            <div class="concierge-channels">
+              <div class="channel-item">
+                <div class="channel-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div>
+                  <div class="channel-label">Reservations & Concierge</div>
+                  <div class="channel-value">+1 (800) 589-2873</div>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div>
+                  <div class="channel-label">Private Email Dispatch</div>
+                  <div class="channel-value">reservations@aureliagrandresort.com</div>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div>
+                  <div class="channel-label">Estate Coordinates</div>
+                  <div class="channel-value">Cala di Oro 7, Private Peninsula, 84011</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Validated Contact Form -->
+        <div class="contact-form-panel">
+          <h3 class="form-title">Send a Private Inquiry</h3>
+          <p class="form-subtitle">Receive an individual response from our Head Concierge within 4 hours.</p>
+
+          <form id="contactConciergeForm" novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label class="form-label" for="contactName">Full Name *</label>
+                <input type="text" id="contactName" class="form-control" placeholder="e.g. Lord Alexander Sinclair" required>
+                <div class="error-message">Please enter your full name</div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactEmail">Email Address *</label>
+                <input type="email" id="contactEmail" class="form-control" placeholder="name@domain.com" required>
+                <div class="error-message">Please enter a valid email address</div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactPhone">Phone / WhatsApp</label>
+                <input type="tel" id="contactPhone" class="form-control" placeholder="+1 (555) 000-0000">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactSubject">Inquiry Focus</label>
+                <select id="contactSubject" class="form-control">
+                  <option value="residence">Villa & Residence Reservation</option>
+                  <option value="yacht">Private Yacht & Helicopter Logistics</option>
+                  <option value="event">Exclusive Buyout & Private Celebration</option>
+                  <option value="dining">Michelin Tasting Menu & Wine Cellar</option>
+                  <option value="other">General Concierge Assistance</option>
+                </select>
+              </div>
+
+              <div class="form-group full-width">
+                <label class="form-label" for="contactMessage">Your Message *</label>
+                <textarea id="contactMessage" class="form-control" placeholder="Please detail your travel dates, preferred residence, or any bespoke desires..." required></textarea>
+                <div class="error-message">Please enter your inquiry message</div>
+              </div>
+
+              <div class="form-group full-width" style="margin-top: 0.5rem;">
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                  <span>Send Message to Concierge</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Luxury Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Col 1: Brand -->
+        <div class="footer-brand-col">
+          <div class="nav-brand" style="margin-bottom: 0.5rem;">
+            <div class="brand-monogram">A</div>
+            <div class="brand-text">
+              <span class="brand-name">AURELIA</span>
+              <span class="brand-tag">Grand Resort & Spa</span>
+            </div>
+          </div>
+          <p>
+            An immortal sanctuary of Mediterranean seclusion. Where architectural grandeur meets intuitive service and boundless azure waters.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Residences -->
+        <div>
+          <div class="footer-col-title">Residences</div>
+          <ul class="footer-links-list">
+            <li><a href="#rooms">Deluxe Azure Rooms</a></li>
+            <li><a href="#rooms">Ocean View Suites</a></li>
+            <li><a href="#rooms">The Aurelia Executive</a></li>
+            <li><a href="#rooms">The Royal Sanctuary</a></li>
+            <li><a href="#rooms">Villa Aurelia Imperial</a></li>
+            <li><a href="#rooms">Oceanfront Pavilions</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Experiences -->
+        <div>
+          <div class="footer-col-title">Experiences</div>
+          <ul class="footer-links-list">
+            <li><a href="#dining">L'Orangerie (3-Star)</a></li>
+            <li><a href="#dining">Aura Rooftop Lounge</a></li>
+            <li><a href="#wellness">Hydrothermal Labyrinth</a></li>
+            <li><a href="#experiences">Private Riva Yacht</a></li>
+            <li><a href="#experiences">Helicopter Vineyard Tour</a></li>
+            <li><a href="#experiences">Lantern-Lit Atoll Supper</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter -->
+        <div>
+          <div class="footer-col-title">The Aurelia Gazette</div>
+          <p class="newsletter-desc">
+            Subscribe for seasonal gastronomic releases, private vintage releases, and invitation-only villa openings.
+          </p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" class="newsletter-input" placeholder="Your private email" required aria-label="Email for newsletter">
+            <button type="submit" class="btn btn-primary btn-sm" aria-label="Subscribe">
+              <span>Join</span>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 Aurelia Grand Resort & Spa. All rights reserved. Forbes 5-Star Certified.
+        </div>
+        <div class="footer-legal-links">
+          <a href="#" id="privacyPolicyLink">Privacy Policy</a>
+          <a href="#" id="termsConditionsLink">Terms & Conditions</a>
+          <a href="#hero" class="back-to-top-btn" id="backToTopBtn">
+            <span>Back to Top</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       INTERACTIVE MODALS ARCHITECTURE
+       ========================================================================= -->
+
+  <!-- 1. Interactive 4-Step Booking Engine Modal -->
+  <div class="modal-overlay" id="bookingModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" aria-label="Close modal">✕</button>
+      <div class="modal-body-content">
+        <!-- Stepper Indicator -->
+        <div class="booking-stepper">
+          <div class="step-indicator active" id="stepIndicator1">
+            <div class="step-number">1</div>
+            <div class="step-name">Dates & Suite</div>
+          </div>
+          <div class="step-indicator" id="stepIndicator2">
+            <div class="step-number">2</div>
+            <div class="step-name">Enhancements</div>
+          </div>
+          <div class="step-indicator" id="stepIndicator3">
+            <div class="step-number">3</div>
+            <div class="step-name">Guest Details</div>
+          </div>
+          <div class="step-indicator" id="stepIndicator4">
+            <div class="step-number">4</div>
+            <div class="step-name">Confirmation</div>
+          </div>
+        </div>
+
+        <!-- Step 1: Dates & Suite Selection -->
+        <div class="booking-step-panel active" id="bookingStep1">
+          <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Configure Your Stay</h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 2rem;">
+            Select your preferred arrival dates and choose from our curated private suites.
+          </p>
+
+          <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; margin-bottom: 1.5rem;">
+            <div>
+              <label class="form-label" for="modalCheckIn">Check-in Date</label>
+              <input type="date" id="modalCheckIn" class="form-control" required>
+            </div>
+            <div>
+              <label class="form-label" for="modalCheckOut">Check-out Date</label>
+              <input type="date" id="modalCheckOut" class="form-control" required>
+            </div>
+            <div>
+              <label class="form-label" for="modalRoomSelect">Select Suite or Villa</label>
+              <select id="modalRoomSelect" class="form-control"></select>
+            </div>
+            <div>
+              <label class="form-label" for="modalGuests">Number of Guests</label>
+              <select id="modalGuests" class="form-control">
+                <option value="1 Guest">1 Guest</option>
+                <option value="2 Guests" selected>2 Guests</option>
+                <option value="3 Guests">3 Guests</option>
+                <option value="4 Guests">4 Guests</option>
+                <option value="6+ Guests">6+ Guests (Villa Exclusive)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Live Stay Summary Box -->
+          <div style="background: var(--bg-surface); border: 1px solid var(--gold-border-subtle); border-radius: var(--radius-xs); padding: 1.25rem; margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center;">
+            <div>
+              <div style="font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase;">Selected Suite</div>
+              <div id="summaryRoomName" style="font-family: var(--font-serif-display); font-size: 1.1rem; color: var(--text-ivory); margin-top: 0.15rem;">Deluxe Azure Room</div>
+              <div id="summaryStayNights" style="font-size: 0.82rem; color: var(--gold-pale);">3 Nights Stay</div>
+            </div>
+            <div style="text-align: right;">
+              <div style="font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase;">Estimated Room Subtotal</div>
+              <div id="summaryRoomTotal" style="font-family: var(--font-serif-display); font-size: 1.6rem; color: var(--gold-light); font-weight: 700;">$2,850</div>
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: flex-end;">
+            <button id="toStep2Btn" class="btn btn-primary">
+              <span>Proceed to Bespoke Add-ons</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 2: Bespoke Enhancements -->
+        <div class="booking-step-panel" id="bookingStep2">
+          <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Bespoke Concierge Enhancements</h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+            Elevate your arrival with champagne rituals, helicopter transfers, or private yacht excursions.
+          </p>
+
+          <div class="addons-selection-grid" id="addonsSelectionContainer">
+            <!-- Rendered dynamically via app.js -->
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--gold-border-subtle); padding-top: 1.5rem; margin-top: 1.5rem;">
+            <div>
+              <div style="font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase;">Grand Total (Stay + Enhancements)</div>
+              <div id="step2GrandTotal" style="font-family: var(--font-serif-display); font-size: 1.65rem; color: var(--gold-primary); font-weight: 700;">$2,850</div>
+            </div>
+            <div style="display: flex; gap: 1rem;">
+              <button id="backToStep1Btn" class="btn btn-secondary"><span>Back</span></button>
+              <button id="toStep3Btn" class="btn btn-primary"><span>Continue to Guest Details</span></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3: Guest Details -->
+        <div class="booking-step-panel" id="bookingStep3">
+          <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Guest Information & Preferences</h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+            Please provide your details so our residential concierge may prepare your bespoke welcome.
+          </p>
+
+          <form id="confirmBookingForm">
+            <div class="form-grid">
+              <div>
+                <label class="form-label" for="guestTitle">Honorific Title</label>
+                <select id="guestTitle" class="form-control">
+                  <option value="Mr.">Mr.</option>
+                  <option value="Mrs.">Mrs.</option>
+                  <option value="Ms.">Ms.</option>
+                  <option value="Dr.">Dr.</option>
+                  <option value="Lord">Lord</option>
+                  <option value="Lady">Lady</option>
+                  <option value="Sir">Sir</option>
+                </select>
+              </div>
+              <div>
+                <label class="form-label" for="guestCountry">Country of Residence *</label>
+                <input type="text" id="guestCountry" class="form-control" placeholder="e.g. United Kingdom" required value="United Kingdom">
+              </div>
+              <div>
+                <label class="form-label" for="guestFirstName">First Name *</label>
+                <input type="text" id="guestFirstName" class="form-control" placeholder="e.g. Alexander" required value="Alexander">
+              </div>
+              <div>
+                <label class="form-label" for="guestLastName">Last Name *</label>
+                <input type="text" id="guestLastName" class="form-control" placeholder="e.g. Sinclair" required value="Sinclair">
+              </div>
+              <div>
+                <label class="form-label" for="guestEmail">Email Address *</label>
+                <input type="email" id="guestEmail" class="form-control" placeholder="name@domain.com" required value="alexander.sinclair@domain.com">
+              </div>
+              <div>
+                <label class="form-label" for="guestPhone">Direct Mobile Number *</label>
+                <input type="tel" id="guestPhone" class="form-control" placeholder="+1 (555) 019-2834" required value="+44 20 7946 0912">
+              </div>
+              <div class="form-group full-width">
+                <label class="form-label" for="guestSpecialRequests">Bespoke Dietary or Stay Preferences</label>
+                <textarea id="guestSpecialRequests" class="form-control" style="min-height: 80px;" placeholder="e.g. High floor ocean view, feathered pillows preferred, Laurent-Perrier welcome bottle..."></textarea>
+              </div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--gold-border-subtle); padding-top: 1.5rem; margin-top: 1.5rem;">
+              <button type="button" id="backToStep2Btn" class="btn btn-secondary"><span>Back</span></button>
+              <button type="submit" class="btn btn-primary">
+                <span>Confirm & Generate Reservation Voucher</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Step 4: Confirmation Voucher -->
+        <div class="booking-step-panel" id="bookingStep4">
+          <div style="text-align: center; margin-bottom: 2rem;">
+            <div class="gold-badge">✦ Reservation Guaranteed ✦</div>
+            <h2 style="font-size: 2rem; margin-bottom: 0.5rem;">We Await Your Arrival</h2>
+            <p style="font-size: 0.92rem; color: var(--text-muted); max-width: 580px; margin: 0 auto;">
+              Your reservation request has been processed. A printable confirmation voucher with your private booking reference is provided below.
+            </p>
+          </div>
+
+          <div id="bookingVoucherContainer">
+            <!-- Rendered dynamically via app.js -->
+          </div>
+
+          <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+            <button id="printVoucherBtn" class="btn btn-secondary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+              <span>Print Official Voucher</span>
+            </button>
+            <button id="finishBookingBtn" class="btn btn-primary">
+              <span>Complete & Return to Resort</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Room Details Modal -->
+  <div class="modal-overlay" id="roomDetailModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" aria-label="Close modal">✕</button>
+      <div class="modal-body-content">
+        <!-- Rendered dynamically via app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Dining Menu & Table Reservation Modal -->
+  <div class="modal-overlay" id="diningModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" aria-label="Close modal">✕</button>
+      <div class="modal-body-content">
+        <!-- Rendered dynamically via app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Spa Treatment Booking Modal -->
+  <div class="modal-overlay" id="spaModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" aria-label="Close modal">✕</button>
+      <div class="modal-body-content">
+        <!-- Rendered dynamically via app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. Fullscreen Gallery Lightbox -->
+  <div class="lightbox-overlay" id="galleryLightbox" role="dialog" aria-modal="true">
+    <div class="lightbox-container">
+      <div class="lightbox-close-btn" id="lightboxCloseBtn">
+        <span>Close</span> ✕
+      </div>
+      <button class="lightbox-nav-btn lightbox-prev" id="lightboxPrevBtn" aria-label="Previous image">‹</button>
+      <img src="" alt="Resort View" class="lightbox-img" id="lightboxImg">
+      <button class="lightbox-nav-btn lightbox-next" id="lightboxNextBtn" aria-label="Next image">›</button>
+      <div class="lightbox-caption-bar">
+        <div class="lightbox-caption-title" id="lightboxTitle"></div>
+        <div class="lightbox-caption-desc" id="lightboxDesc"></div>
+        <div style="font-size: 0.75rem; color: var(--gold-dark); margin-top: 0.3rem;" id="lightboxCounter"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- JavaScript Modules (Loaded in correct sequence) -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
